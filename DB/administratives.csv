@@ -1,0 +1,21 @@
+Nombre;Email;Contraseña;Rol;id;restaurant_id
+Rodrigo López;rodrigo@example.com;KX8YtZ5Q7a;Caja;1;9.0
+Valentina Fernández;valentina@example.com;T2jF9P4D6s;Mozo;2;1.0
+Federico Martínez;federico@example.com;M3rK7iG1V8;Administrativo;3;7.0
+Camila Herrera;camila@example.com;E9sF6H2J1c;Mozo;4;3.0
+Lucas Gómez;lucas@example.com;B5vR9A3K8t;Caja;5;1.0
+Sofía Rodríguez;sofia@example.com;R6G9E2T5Y3;Mozo;6;2.0
+Martín Castro;martin@example.com;F3H7N4K2T6;Administrativo;7;2.0
+Carolina Morales;carolina@example.com;Y8J4W7N6D2;Caja;8;2.0
+Nicolás Sánchez;nicolas@example.com;Q1W5Z7X9V3;Administrativo;9;5.0
+Victoria González;victoria@example.com;L5K9N3J7H4;Caja;10;3.0
+Juan Cruz Medina;juan@example.com;X7T2V4B1A9;Mozo;11;7.0
+Valeria Peralta;valeria@example.com;A3E8R5G7C2;Administrativo;12;1.0
+Agustín Acosta;agustin@example.com;D4K6V1T7L9;Caja;13;4.0
+Martina Ríos;martina@example.com;U2Y4R7E9H3;Administrativo;14;4.0
+Santiago Vargas;santiago@example.com;H7N3T2W5D4;Mozo;15;6.0
+Florencia Romero;florencia@example.com;S4D9G6H2L1;Caja;16;1.0
+Julián López;julian@example.com;N9B5T7R1M2;Administrativo;17;10.0
+Lucía Morales;lucia@example.com;P8W3Y6Q9I5;Mozo;18;2.0
+Bruno Fernández;bruno@example.com;V6C1X8Z3Q7;Caja;19;5.0
+Valentina Díaz;valentina.diaz@example.com;I5H8K3T7R9;Administrativo;20;8.0
