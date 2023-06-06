@@ -8,7 +8,7 @@ CREATE TABLE restaurants(
     name_restaurant VARCHAR(75) NOT NULL,
     direction VARCHAR(75) NOT NULL,
     CEO VARCHAR(75) NOT NULL,
-    PRIMARY KEY(id)
+    PRIMARY KEY(id),
 );
 
 DROP TABLE IF EXISTS sales;
@@ -19,7 +19,8 @@ CREATE TABLE sales(
     direction_delivery VARCHAR(75), 
     total_price DECIMAL(10,2) NOT NULL,
     id_restaurant INT NOT NULL,
-    FOREIGN KEY (id_restaurant) REFERENCES restaurants(id),
+    FOREIGN KEY (id_restaurant) REFERENCES restaurants(id)
+    ON DELETE RESTRICT,
     PRIMARY KEY(id)
 );
 
@@ -32,7 +33,8 @@ CREATE TABLE administratives(
     email VARCHAR(120) NOT NULL,
     password_administratives VARCHAR(120) NOT NULL,
     id_restaurant INT NOT NULL,
-    FOREIGN KEY (id_restaurant) REFERENCES restaurants(id),
+    FOREIGN KEY (id_restaurant) REFERENCES restaurants(id)
+    ON DELETE RESTRICT,
     PRIMARY KEY(id)
 );
 
@@ -44,7 +46,8 @@ CREATE TABLE dishes(
     id_restaurant INT NOT NULL,
     category VARCHAR(75),
     price DECIMAL(10,2) NOT NULL,
-    FOREIGN KEY (id_restaurant) REFERENCES restaurants(id),
+    FOREIGN KEY (id_restaurant) REFERENCES restaurants(id)
+    ON DELETE RESTRICT,
     PRIMARY KEY(id)
 );
 
@@ -53,7 +56,7 @@ CREATE TABLE dishes_per_sale(
     id INT AUTO_INCREMENT,
     id_dish INT NOT NULL,
     id_sale INT NOT NULL,
-    FOREIGN KEY (id_dish) REFERENCES dishes(id),
-    FOREIGN KEY (id_sale) REFERENCES sales(id),
-    PRIMARY KEY(id)
+    FOREIGN KEY (id_dish) REFERENCES dishes(id) ON DELETE RESTRICT,
+    FOREIGN KEY (id_sale) REFERENCES sales(id) ON DELETE RESTRICT,
+    PRIMARY KEY(id),
 );
