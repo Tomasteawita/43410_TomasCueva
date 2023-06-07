@@ -1,0 +1,22 @@
+INSERT INTO administratives VALUES ('1', '12345678', 'Rodrigo', 'López', 'rodrigo@example.com', 'KX8YtZ5Q7a', '9');
+INSERT INTO administratives VALUES ('2', '23456789', 'Valentina', 'Fernández', 'valentina@example.com', 'T2jF9P4D6s', '1');
+INSERT INTO administratives VALUES ('3', '34567890', 'Federico', 'Martínez', 'federico@example.com', 'M3rK7iG1V8', '7');
+INSERT INTO administratives VALUES ('4', '45678901', 'Camila', 'Herrera', 'camila@example.com', 'E9sF6H2J1c', '3');
+INSERT INTO administratives VALUES ('5', '56789012', 'Lucas', 'Gómez', 'lucas@example.com', 'B5vR9A3K8t', '1');
+INSERT INTO administratives VALUES ('6', '67890123', 'Sofía', 'Rodríguez', 'sofia@example.com', 'R6G9E2T5Y3', '2');
+INSERT INTO administratives VALUES ('7', '78901234', 'Martín', 'Castro', 'martin@example.com', 'F3H7N4K2T6', '2');
+INSERT INTO administratives VALUES ('8', '89012345', 'Carolina', 'Morales', 'carolina@example.com', 'Y8J4W7N6D2', '2');
+INSERT INTO administratives VALUES ('9', '90123456', 'Nicolás', 'Sánchez', 'nicolas@example.com', 'Q1W5Z7X9V3', '5');
+INSERT INTO administratives VALUES ('10', '1234567', 'Victoria', 'González', 'victoria@example.com', 'L5K9N3J7H4', '3');
+INSERT INTO administratives VALUES ('11', '12345678', 'Juan Cruz', 'Medina', 'juan@example.com', 'X7T2V4B1A9', '7');
+INSERT INTO administratives VALUES ('12', '23456789', 'Valeria', 'Peralta', 'valeria@example.com', 'A3E8R5G7C2', '1');
+INSERT INTO administratives VALUES ('13', '34567890', 'Agustín', 'Acosta', 'agustin@example.com', 'D4K6V1T7L9', '4');
+INSERT INTO administratives VALUES ('14', '45678901', 'Martina', 'Ríos', 'martina@example.com', 'U2Y4R7E9H3', '4');
+INSERT INTO administratives VALUES ('15', '56789012', 'Santiago', 'Vargas', 'santiago@example.com', 'H7N3T2W5D4', '6');
+INSERT INTO administratives VALUES ('16', '67890123', 'Florencia', 'Romero', 'florencia@example.com', 'S4D9G6H2L1', '1');
+INSERT INTO administratives VALUES ('17', '78901234', 'Julián', 'López', 'julian@example.com', 'N9B5T7R1M2', '10');
+INSERT INTO administratives VALUES ('18', '89012345', 'Lucía', 'Morales', 'lucia@example.com', 'P8W3Y6Q9I5', '2');
+INSERT INTO administratives VALUES ('19', '90123456', 'Bruno', 'Fernández', 'bruno@example.com', 'V6C1X8Z3Q7', '5');
+INSERT INTO administratives VALUES ('20', '1234567', 'Valentina', 'Díaz', 'valentina.diaz@example.com', 'I5H', '4');
+
+SELECT * FROM administratives;
