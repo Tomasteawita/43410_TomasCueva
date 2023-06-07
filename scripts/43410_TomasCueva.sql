@@ -7,8 +7,8 @@ CREATE TABLE restaurants(
     id INT AUTO_INCREMENT,
     name_restaurant VARCHAR(75) NOT NULL,
     direction VARCHAR(75) NOT NULL,
-    CEO VARCHAR(75) NOT NULL,
-    PRIMARY KEY(id),
+    CEO VARCHAR(75),
+    PRIMARY KEY(id)
 );
 
 DROP TABLE IF EXISTS sales;
@@ -58,5 +58,5 @@ CREATE TABLE dishes_per_sale(
     id_sale INT NOT NULL,
     FOREIGN KEY (id_dish) REFERENCES dishes(id) ON DELETE RESTRICT,
     FOREIGN KEY (id_sale) REFERENCES sales(id) ON DELETE RESTRICT,
-    PRIMARY KEY(id),
+    PRIMARY KEY(id)
 );

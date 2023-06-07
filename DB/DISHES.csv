@@ -1,72 +1,72 @@
-Restaurante;Plato;Descripción;Categoría;Precio;id
-1;Classic Burger;Deliciosa hamburguesa clásica con carne jugosa, pan suave, lechuga, tomate y queso.;Hamburguesa;9.99;1
-1;Cheeseburger Supreme;Hamburguesa con doble carne, queso fundido, tocino crujiente y salsa especial.;Hamburguesa;12.99;2
-1;Spicy Chicken Sandwich;Sándwich de pollo picante con lechuga, tomate y mayonesa de chipotle.;Sándwich;10.99;3
-1;Vegetarian Deluxe;Burger vegetariana con una sabrosa mezcla de verduras, queso y aderezo especial.;Hamburguesa;9.99;4
-2;Eggs Benedict;Huevos pochados sobre muffin inglés con lonchas de jamón cubiertos de salsa holandesa.;Desayuno;11.99;5
-2;French Toast;Tostadas francesas esponjosas servidas con jarabe de arce y mantequilla.;Desayuno;8.99;6
-2;Cobb Salad;Ensalada clásica con pollo a la parrilla, aguacate, huevo, tomate y aderezo de queso azul.;Ensalada;10.99;7
-3;Caramel Macchiato;Café espresso con leche caliente y espuma de leche, endulzado con caramelo.;Café;4.99;8
-3;Croissant de jamón y queso;Croissant horneado con jamón y queso fundido.;Desayuno;3.99;9
-3;Chocolate Chip Muffin;Muffin de chocolate con chispas, perfecto para acompañar el café.;Postre;2.99;10
-4;Taco al Pastor;Taco mexicano con carne de cerdo marinada, piña, cebolla y cilantro.;Taco;3.5;11
-4;Taco de Barbacoa;Taco de carne de res jugosa y tierna cocinada a fuego lento, con cebolla y cilantro.;Taco;3.5;12
-4;Quesadilla de Pollo;Quesadilla de tortilla de harina con pollo a la parrilla, queso fundido y guacamole.;Plato Principal;9.99;13
-5;Margherita Pizza;Pizza clásica italiana con salsa de tomate, mozzarella fresca y albahaca.;Pizza;12.99;14
-5;Pepperoni Lovers;Pizza con salsa de tomate, queso mozzarella y abundante pepperoni.;Pizza;14.99;15
-5;Hawaiian Delight;Pizza con jamón, piña, salsa de tomate y queso mozzarella.;Pizza;13.99;16
-6;Hot Wings;Alitas de pollo picantes servidas con salsa de tu elección y bastones de apio.;Aperitivo;8.99;17
-6;Crispy Chicken Tenders;Tiras de pollo crujientes servidas con papas fritas y salsa de mostaza y miel.;Plato Principal;10.99;18
-6;Chicken Caesar Wrap;Wrap de pollo a la parrilla, lechuga, tomate, queso parmesano y aderezo Caesar.;Sándwich;9.99;19
-7;Double Cheeseburger;Hamburguesa doble con queso cheddar fundido, pepinillos y salsa especial.;Hamburguesa;11.99;20
-7;Bacon Mushroom Melt;Hamburguesa con tocino crujiente, champiñones salteados y queso suizo fundido.;Hamburguesa;12.99;21
-7;Avocado Turkey Burger;Hamburguesa de pavo jugosa con aguacate, lechuga, tomate y mayonesa.;Hamburguesa;10.99;22
-8;Sashimi Deluxe;Selección de pescado crudo fresco en finas lonchas, servido con salsa de soja y wasabi.;Sushi;18.99;23
-8;California Roll;Roll clásico de sushi con cangrejo de imitación, aguacate y pepino.;Sushi;9.99;24
-8;Dragon Roll;Roll de sushi con langostinos tempura, aguacate y salsa de anguila.;Sushi;14.99;25
-9;Spaghetti Bolognese;Spaghetti con salsa de carne a la boloñesa y queso parmesano rallado.;Pasta;11.99;26
-9;Lasagna Classica;Lasaña casera con capas de pasta, carne, salsa de tomate y queso gratinado.;Pasta;13.99;27
-9;Gnocchi al Pesto;Gnocchi caseros con salsa de pesto fresco, piñones y queso parmesano.;Pasta;12.99;28
-10;Roasted Chicken;Pollo asado jugoso acompañado de puré de papas y vegetales asados.;Plato Principal;13.99;29
-10;Honey Mustard Chicken;Pechuga de pollo a la parrilla con salsa de mostaza y miel, servida con arroz.;Plato Principal;12.99;30
-10;Chicken Caesar Salad;Ensalada César con pollo a la parrilla, lechuga romana, queso parmesano y aderezo Caesar.;Ensalada;10.99;31
-1;BBQ Bacon Burger;Hamburguesa con salsa BBQ, tocino crujiente, cebolla a la parrilla y queso cheddar.;Hamburguesa;11.99;32
-1;Mushroom Swiss Burger;Hamburguesa con champiñones salteados, queso suizo y salsa especial.;Hamburguesa;12.99;33
-1;Chicken Avocado Wrap;Wrap de pollo a la parrilla, aguacate, lechuga, tomate y aderezo de cilantro.;Sándwich;9.99;34
-1;Onion Rings;Aros de cebolla crujientes y dorados, acompañados de salsa BBQ.;Acompañamiento;4.99;35
-2;Avocado Toast;Tostada de pan de centeno con aguacate, huevo pochado y semillas de chía.;Desayuno;9.99;36
-2;Greek Salad;Ensalada griega con pepino, tomate, aceitunas kalamata, queso feta y aderezo de limón.;Ensalada;10.99;37
-2;Spinach and Feta Omelette;Omelette de espinacas y queso feta, servido con pan tostado.;Desayuno;8.99;38
-2;Blueberry Pancakes;Panqueques esponjosos con arándanos frescos y jarabe de arce.;Desayuno;7.99;39
-3;Iced Caramel Latte;Latte helado con café espresso, leche, caramelo y hielo.;Café;5.99;40
-3;Bagel with Lox;Bagel tostado con salmón ahumado, queso crema, rodajas de pepino y eneldo.;Desayuno;9.99;41
-3;Red Velvet Cupcake;Cupcake de terciopelo rojo con crema de queso y decoración de chocolate.;Postre;3.99;42
-3;Affogato;Café espresso servido sobre una bola de helado de vainilla.;Postre;6.99;43
-4;Carnitas Burrito;Burrito relleno de carne de cerdo deshebrada, frijoles, arroz y salsa verde.;Plato Principal;10.99;44
-4;Chorizo Tacos;Tacos de chorizo picante con cebolla, cilantro y salsa de tomate asada.;Taco;4.5;45
-4;Guacamole and Chips;Delicioso guacamole casero con totopos de maíz recién hechos.;Aperitivo;6.99;46
-4;Mexican Street Corn;Elote asado a la parrilla con mayonesa, queso fresco y chile en polvo.;Aperitivo;5.99;47
-5;Caprese Salad;Ensalada caprese con tomates, mozzarella fresca, albahaca y aceite de oliva.;Ensalada;9.99;48
-5;Meat Lover's Pizza;Pizza con salsa de tomate, pepperoni, salchicha, tocino y jamón.;Pizza;14.99;49
-5;Vegetarian Pizza;Pizza con salsa de tomate, mozzarella, champiñones, pimientos y aceitunas.;Pizza;12.99;50
-5;Garlic Bread;Pan de ajo horneado con mantequilla de ajo y espolvoreado con perejil.;Aperitivo;4.99;51
-6;BBQ Chicken Wings;Alitas de pollo bañadas en salsa BBQ y servidas con bastones de zanahoria y apio.;Aperitivo;8.99;52
-6;Crispy Chicken Salad;Ensalada con pollo crujiente, lechuga mixta, tomate, pepino y aderezo ranch.;Ensalada;9.99;53
-6;Spicy Chicken Sandwich;Sándwich de pollo picante con queso pepper jack, jalapeños y salsa de chipotle.;Sándwich;10.99;54
-6;Sweet Potato Fries;Bastones de camote crujientes servidos con alioli de cilantro.;Acompañamiento;5.99;55
-7;Mushroom Swiss Burger;Hamburguesa con champiñones salteados, queso suizo y salsa especial.;Hamburguesa;12.99;56
-7;Bacon Cheese Fries;Papas fritas cubiertas con queso cheddar fundido y tocino crujiente.;Acompañamiento;6.99;57
-7;Onion Rings;Aros de cebolla crujientes y dorados, acompañados de salsa de chipotle.;Acompañamiento;4.99;58
-7;Oreo Milkshake;Batido cremoso de helado de vainilla con trozos de galleta Oreo.;Bebida;6.99;59
-8;Rainbow Roll;Roll de sushi con pescado variado, aguacate y salsa de anguila.;Sushi;15.99;60
-8;Tempura Shrimp Roll;Roll de sushi con camarones tempura, aguacate y salsa de anguila.;Sushi;13.99;61
-8;Spicy Tuna Roll;Roll de sushi picante con atún, aguacate y pepino.;Sushi;11.99;62
-8;Miso Soup;Sopa de miso tradicional con tofu, algas y cebollín.;Sopa;3.99;63
-9;Fettuccine Alfredo;Fettuccine con salsa cremosa de queso parmesano.;Pasta;12.99;64
-9;Chicken Parmesan;Pechuga de pollo empanizada con salsa marinara y queso derretido, servida sobre espaguetis.;Plato Principal;14.99;65
-9;Caprese Salad;Ensalada caprese con tomates frescos, mozzarella y hojas de albahaca.;Ensalada;9.99;66
-9;Tiramisu;Postre italiano clásico hecho con bizcochos, café, crema de mascarpone y cacao.;Postre;7.99;67
-10;BBQ Chicken Wings;Alitas de pollo bañadas en salsa BBQ y servidas con bastones de apio y zanahoria.;Aperitivo;8.99;68
-10;Grilled Chicken Caesar Salad;Ensalada César con pollo a la parrilla, lechuga romana, crutones y aderezo Caesar.;Ensalada;10.99;69
-10;Chicken Quesadilla;Quesadilla de pollo con queso cheddar derretido, cebolla y pimientos.;Plato Principal;9.99;70
-10;Key Lime Pie;Tarta de lima con una base de galleta y crema de lima.;Postre;6.99;71
+;Restaurante;Plato;Descripción;Categoría;Precio;id
+0;1;Classic Burger;Deliciosa hamburguesa clásica con carne jugosa, pan suave, lechuga, tomate y queso.;Hamburguesa;9.99;1
+1;1;Cheeseburger Supreme;Hamburguesa con doble carne, queso fundido, tocino crujiente y salsa especial.;Hamburguesa;12.99;2
+2;1;Spicy Chicken Sandwich;Sándwich de pollo picante con lechuga, tomate y mayonesa de chipotle.;Sándwich;10.99;3
+3;1;Vegetarian Deluxe;Burger vegetariana con una sabrosa mezcla de verduras, queso y aderezo especial.;Hamburguesa;9.99;4
+4;2;Eggs Benedict;Huevos pochados sobre muffin inglés con lonchas de jamón cubiertos de salsa holandesa.;Desayuno;11.99;5
+5;2;French Toast;Tostadas francesas esponjosas servidas con jarabe de arce y mantequilla.;Desayuno;8.99;6
+6;2;Cobb Salad;Ensalada clásica con pollo a la parrilla, aguacate, huevo, tomate y aderezo de queso azul.;Ensalada;10.99;7
+7;3;Caramel Macchiato;Café espresso con leche caliente y espuma de leche, endulzado con caramelo.;Café;4.99;8
+8;3;Croissant de jamón y queso;Croissant horneado con jamón y queso fundido.;Desayuno;3.99;9
+9;3;Chocolate Chip Muffin;Muffin de chocolate con chispas, perfecto para acompañar el café.;Postre;2.99;10
+10;4;Taco al Pastor;Taco mexicano con carne de cerdo marinada, piña, cebolla y cilantro.;Taco;3.5;11
+11;4;Taco de Barbacoa;Taco de carne de res jugosa y tierna cocinada a fuego lento, con cebolla y cilantro.;Taco;3.5;12
+12;4;Quesadilla de Pollo;Quesadilla de tortilla de harina con pollo a la parrilla, queso fundido y guacamole.;Plato Principal;9.99;13
+13;5;Margherita Pizza;Pizza clásica italiana con salsa de tomate, mozzarella fresca y albahaca.;Pizza;12.99;14
+14;5;Pepperoni Lovers;Pizza con salsa de tomate, queso mozzarella y abundante pepperoni.;Pizza;14.99;15
+15;5;Hawaiian Delight;Pizza con jamón, piña, salsa de tomate y queso mozzarella.;Pizza;13.99;16
+16;6;Hot Wings;Alitas de pollo picantes servidas con salsa de tu elección y bastones de apio.;Aperitivo;8.99;17
+17;6;Crispy Chicken Tenders;Tiras de pollo crujientes servidas con papas fritas y salsa de mostaza y miel.;Plato Principal;10.99;18
+18;6;Chicken Caesar Wrap;Wrap de pollo a la parrilla, lechuga, tomate, queso parmesano y aderezo Caesar.;Sándwich;9.99;19
+19;7;Double Cheeseburger;Hamburguesa doble con queso cheddar fundido, pepinillos y salsa especial.;Hamburguesa;11.99;20
+20;7;Bacon Mushroom Melt;Hamburguesa con tocino crujiente, champiñones salteados y queso suizo fundido.;Hamburguesa;12.99;21
+21;7;Avocado Turkey Burger;Hamburguesa de pavo jugosa con aguacate, lechuga, tomate y mayonesa.;Hamburguesa;10.99;22
+22;8;Sashimi Deluxe;Selección de pescado crudo fresco en finas lonchas, servido con salsa de soja y wasabi.;Sushi;18.99;23
+23;8;California Roll;Roll clásico de sushi con cangrejo de imitación, aguacate y pepino.;Sushi;9.99;24
+24;8;Dragon Roll;Roll de sushi con langostinos tempura, aguacate y salsa de anguila.;Sushi;14.99;25
+25;9;Spaghetti Bolognese;Spaghetti con salsa de carne a la boloñesa y queso parmesano rallado.;Pasta;11.99;26
+26;9;Lasagna Classica;Lasaña casera con capas de pasta, carne, salsa de tomate y queso gratinado.;Pasta;13.99;27
+27;9;Gnocchi al Pesto;Gnocchi caseros con salsa de pesto fresco, piñones y queso parmesano.;Pasta;12.99;28
+28;10;Roasted Chicken;Pollo asado jugoso acompañado de puré de papas y vegetales asados.;Plato Principal;13.99;29
+29;10;Honey Mustard Chicken;Pechuga de pollo a la parrilla con salsa de mostaza y miel, servida con arroz.;Plato Principal;12.99;30
+30;10;Chicken Caesar Salad;Ensalada César con pollo a la parrilla, lechuga romana, queso parmesano y aderezo Caesar.;Ensalada;10.99;31
+31;1;BBQ Bacon Burger;Hamburguesa con salsa BBQ, tocino crujiente, cebolla a la parrilla y queso cheddar.;Hamburguesa;11.99;32
+32;1;Mushroom Swiss Burger;Hamburguesa con champiñones salteados, queso suizo y salsa especial.;Hamburguesa;12.99;33
+33;1;Chicken Avocado Wrap;Wrap de pollo a la parrilla, aguacate, lechuga, tomate y aderezo de cilantro.;Sándwich;9.99;34
+34;1;Onion Rings;Aros de cebolla crujientes y dorados, acompañados de salsa BBQ.;Acompañamiento;4.99;35
+35;2;Avocado Toast;Tostada de pan de centeno con aguacate, huevo pochado y semillas de chía.;Desayuno;9.99;36
+36;2;Greek Salad;Ensalada griega con pepino, tomate, aceitunas kalamata, queso feta y aderezo de limón.;Ensalada;10.99;37
+37;2;Spinach and Feta Omelette;Omelette de espinacas y queso feta, servido con pan tostado.;Desayuno;8.99;38
+38;2;Blueberry Pancakes;Panqueques esponjosos con arándanos frescos y jarabe de arce.;Desayuno;7.99;39
+39;3;Iced Caramel Latte;Latte helado con café espresso, leche, caramelo y hielo.;Café;5.99;40
+40;3;Bagel with Lox;Bagel tostado con salmón ahumado, queso crema, rodajas de pepino y eneldo.;Desayuno;9.99;41
+41;3;Red Velvet Cupcake;Cupcake de terciopelo rojo con crema de queso y decoración de chocolate.;Postre;3.99;42
+42;3;Affogato;Café espresso servido sobre una bola de helado de vainilla.;Postre;6.99;43
+43;4;Carnitas Burrito;Burrito relleno de carne de cerdo deshebrada, frijoles, arroz y salsa verde.;Plato Principal;10.99;44
+44;4;Chorizo Tacos;Tacos de chorizo picante con cebolla, cilantro y salsa de tomate asada.;Taco;4.5;45
+45;4;Guacamole and Chips;Delicioso guacamole casero con totopos de maíz recién hechos.;Aperitivo;6.99;46
+46;4;Mexican Street Corn;Elote asado a la parrilla con mayonesa, queso fresco y chile en polvo.;Aperitivo;5.99;47
+47;5;Caprese Salad;Ensalada caprese con tomates, mozzarella fresca, albahaca y aceite de oliva.;Ensalada;9.99;48
+48;5;Meat Lover's Pizza;Pizza con salsa de tomate, pepperoni, salchicha, tocino y jamón.;Pizza;14.99;49
+49;5;Vegetarian Pizza;Pizza con salsa de tomate, mozzarella, champiñones, pimientos y aceitunas.;Pizza;12.99;50
+50;5;Garlic Bread;Pan de ajo horneado con mantequilla de ajo y espolvoreado con perejil.;Aperitivo;4.99;51
+51;6;BBQ Chicken Wings;Alitas de pollo bañadas en salsa BBQ y servidas con bastones de zanahoria y apio.;Aperitivo;8.99;52
+52;6;Crispy Chicken Salad;Ensalada con pollo crujiente, lechuga mixta, tomate, pepino y aderezo ranch.;Ensalada;9.99;53
+53;6;Spicy Chicken Sandwich;Sándwich de pollo picante con queso pepper jack, jalapeños y salsa de chipotle.;Sándwich;10.99;54
+54;6;Sweet Potato Fries;Bastones de camote crujientes servidos con alioli de cilantro.;Acompañamiento;5.99;55
+55;7;Mushroom Swiss Burger;Hamburguesa con champiñones salteados, queso suizo y salsa especial.;Hamburguesa;12.99;56
+56;7;Bacon Cheese Fries;Papas fritas cubiertas con queso cheddar fundido y tocino crujiente.;Acompañamiento;6.99;57
+57;7;Onion Rings;Aros de cebolla crujientes y dorados, acompañados de salsa de chipotle.;Acompañamiento;4.99;58
+58;7;Oreo Milkshake;Batido cremoso de helado de vainilla con trozos de galleta Oreo.;Bebida;6.99;59
+59;8;Rainbow Roll;Roll de sushi con pescado variado, aguacate y salsa de anguila.;Sushi;15.99;60
+60;8;Tempura Shrimp Roll;Roll de sushi con camarones tempura, aguacate y salsa de anguila.;Sushi;13.99;61
+61;8;Spicy Tuna Roll;Roll de sushi picante con atún, aguacate y pepino.;Sushi;11.99;62
+62;8;Miso Soup;Sopa de miso tradicional con tofu, algas y cebollín.;Sopa;3.99;63
+63;9;Fettuccine Alfredo;Fettuccine con salsa cremosa de queso parmesano.;Pasta;12.99;64
+64;9;Chicken Parmesan;Pechuga de pollo empanizada con salsa marinara y queso derretido, servida sobre espaguetis.;Plato Principal;14.99;65
+65;9;Caprese Salad;Ensalada caprese con tomates frescos, mozzarella y hojas de albahaca.;Ensalada;9.99;66
+66;9;Tiramisu;Postre italiano clásico hecho con bizcochos, café, crema de mascarpone y cacao.;Postre;7.99;67
+67;10;BBQ Chicken Wings;Alitas de pollo bañadas en salsa BBQ y servidas con bastones de apio y zanahoria.;Aperitivo;8.99;68
+68;10;Grilled Chicken Caesar Salad;Ensalada César con pollo a la parrilla, lechuga romana, crutones y aderezo Caesar.;Ensalada;10.99;69
+69;10;Chicken Quesadilla;Quesadilla de pollo con queso cheddar derretido, cebolla y pimientos.;Plato Principal;9.99;70
+70;10;Key Lime Pie;Tarta de lima con una base de galleta y crema de lima.;Postre;6.99;71
