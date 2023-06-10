@@ -11,6 +11,9 @@ CREATE TABLE restaurants(
     PRIMARY KEY(id)
 );
 
+DROP TABLE IF EXISTS customers;
+
+
 DROP TABLE IF EXISTS sales;
 CREATE TABLE sales(
     id INT AUTO_INCREMENT,
@@ -57,6 +60,26 @@ CREATE TABLE dishes_per_sale(
     id_sale INT NOT NULL,
     quantity INT DEFAULT 1,
     FOREIGN KEY (id_dish) REFERENCES dishes(id) ON DELETE RESTRICT,
+    FOREIGN KEY (id_sale) REFERENCES sales(id) ON DELETE RESTRICT,
+    PRIMARY KEY(id)
+);
+
+DROP TABLE IF EXISTS customers;
+CREATE TABLE customers(
+    id INT AUTO_INCREMENT,
+    DNI INT NOT NULL,
+    name_customer VARCHAR(75),
+    last_name VARCHAR(75) NOT NULL,
+    email VARCHAR(120) NOT NULL,
+    PRIMARY KEY(id)
+);
+
+DROP TABLE IF EXISTS sales_per_customer;
+CREATE TABLE dishes_per_sale(
+    id INT AUTO_INCREMENT,
+    id_customer INT NOT NULL,
+    id_sale INT NOT NULL,
+    FOREIGN KEY (id_customer) REFERENCES customers(id) ON DELETE RESTRICT,
     FOREIGN KEY (id_sale) REFERENCES sales(id) ON DELETE RESTRICT,
     PRIMARY KEY(id)
 );
