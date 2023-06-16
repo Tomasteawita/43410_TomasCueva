@@ -1,0 +1,9 @@
+notes/
+venv/
+AppWebRestaurantes.drawio
+.gitignore
+README.md
+requirements.txt
+tematica.md
+manipulated_data.ipynb
+create_insert_sql.ipynb

@@ -1,0 +1,10 @@
+version: '3'
+services:
+  db:
+    build: .
+    volumes:
+      - ./data:/MySQL
+    environment:
+      MYSQL_ROOT_PASSWORD: 112373153644548521TomasteawitaProyecta200244548521!
+    stdin_open: true
+    tty: true
