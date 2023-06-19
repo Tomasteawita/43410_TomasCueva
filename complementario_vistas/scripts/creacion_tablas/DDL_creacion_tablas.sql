@@ -1,3 +1,5 @@
+SHOW DATABASES;
+
 DROP SCHEMA IF EXISTS RestAnalytics;
 CREATE SCHEMA IF NOT EXISTS RestAnalytics;
 USE RestAnalytics;
@@ -71,5 +73,8 @@ CREATE TABLE dishes_per_sale(
     FOREIGN KEY (id_sale) REFERENCES sales(id) ON DELETE RESTRICT,
     PRIMARY KEY(id)
 );
+
+SHOW TABLES;
+
 
 

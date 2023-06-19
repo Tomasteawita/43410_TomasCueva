@@ -1,3 +1,5 @@
 notes/
 venv/
 requirements.txt
+docker/
+MySQL/
