@@ -1,0 +1,25 @@
+DNI;last_name;name_administrative;email;password_administratives;id;id_restaurant
+12345678;López;Rodrigo;rodrigo@example.com;KX8YtZ5Q7a;1;9
+23456789;Fernández;Valentina;valentina@example.com;T2jF9P4D6s;2;1
+34567890;Martínez;Federico;federico@example.com;M3rK7iG1V8;3;7
+45678901;Herrera;Camila;camila@example.com;E9sF6H2J1c;4;3
+56789012;Gómez;Lucas;lucas@example.com;B5vR9A3K8t;5;1
+67890123;Rodríguez;Sofía;sofia@example.com;R6G9E2T5Y3;6;2
+78901234;Castro;Martín;martin@example.com;F3H7N4K2T6;7;2
+89012345;Morales;Carolina;carolina@example.com;Y8J4W7N6D2;8;2
+90123456;Sánchez;Nicolás;nicolas@example.com;Q1W5Z7X9V3;9;5
+01234567;González;Victoria;victoria@example.com;L5K9N3J7H4;10;3
+12345678;Medina;Juan Cruz;juan@example.com;X7T2V4B1A9;11;7
+23456789;Peralta;Valeria;valeria@example.com;A3E8R5G7C2;12;1
+34567890;Acosta;Agustín;agustin@example.com;D4K6V1T7L9;13;4
+45678901;Ríos;Martina;martina@example.com;U2Y4R7E9H3;14;4
+56789012;Vargas;Santiago;santiago@example.com;H7N3T2W5D4;15;6
+67890123;Romero;Florencia;florencia@example.com;S4D9G6H2L1;16;1
+78901234;López;Julián;julian@example.com;N9B5T7R1M2;17;10
+89012345;Morales;Lucía;lucia@example.com;P8W3Y6Q9I5;18;2
+90123456;Fernández;Bruno;bruno@example.com;V6C1X8Z3Q7;19;5
+01234567;Díaz;Valentina;valentina.diaz@example.com;I5H;20;4
+
+
+
+

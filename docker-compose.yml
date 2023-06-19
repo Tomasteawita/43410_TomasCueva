@@ -8,3 +8,5 @@ services:
       MYSQL_ROOT_PASSWORD: 112373153644548521TomasteawitaProyecta200244548521!
     stdin_open: true
     tty: true
+    ports:
+      - 3306:3306
