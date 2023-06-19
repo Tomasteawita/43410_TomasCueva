@@ -59,7 +59,24 @@ BEGIN
 END$$
 DELIMITER;
 
---SP para insertar datos en la base de datos
+--SP para insertar datos de ventas en la base de datos
+/*
+Primera es recomendable utilizar el proceso SP_GET_RESTAURANT_DISHES para saber que platos son del
+restaurante del que realizo la venta.
+Posteriormente se pasa a llenar los parametros solicidados de la siguiente forma
+
+IN costumer_id: Un id de costumer
+IN restaurant_id: Un id de costumer
+IN ids_dishes: Se debe pasar una lista de IDs separado por comas (",") y  sin espacios, ejemplo : "1,2,30,31"
+IN quantity_dihes: Se debe pasar una lista de numeros(que representa la cantidad de cada plato) en el orden 
+de acuerdo al orden en el que se presentan los platos en el parametro anterior, ejemplo:
+Si se pasa "1,2,30,31", el parametro quantity_dihes deberia recibir "2,1,1,3" que corresponde a:
+id plato 1 cantidad 2
+id plato 2 cantidad 1
+id plato 30 cantidad 1
+id plato 31 cantidad 3
+IN consumption: solo puede recibir "delivery" o "restaurant"
+*/
 DROP PROCEDURE IF EXISTS SP_ADD_COMPLETE_SALE;
 DELIMITER $$
 CREATE PROCEDURE SP_ADD_COMPLETE_SALE(
@@ -106,3 +123,7 @@ BEGIN
     END WHILE;
 END$$
 DELIMITER ;
+/*La idea inicial de este procedimiento es que una vez que se guarden los datos de la venta de la linea 100 a la 101,
+comienze una secuencia para poder guardar los datos en la tabla transaccional "dishes_per_sale" con los parametros
+ids_dishes y quantity_dishes, sin embargo no logre que se guarden los datos dentro de la tabla dishes_per_sale
+por alguna razon guarda los datos de la venta (sale) pero no de los platos por venta (dishes_per_sale)*/
