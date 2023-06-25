@@ -1,0 +1,12 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:latest
+    restart: always
+    container_name: mysql-coder
+    environment:
+      MYSQL_ROOT_PASSWORD: mysqlTomasteawita2002!
+    ports:
+      - 3306:3306
+    volumes:
+      - ./data:/var/lib/mysql
