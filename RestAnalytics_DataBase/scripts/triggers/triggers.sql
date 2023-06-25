@@ -13,39 +13,28 @@ CREATE TABLE auditorie (
 );
 
 DROP TRIGGER IF EXISTS TRG_AUDITORIE_DISHES;
-
+-- Este trigger esta inclompleto, debe tener todos los campos dentro de los ifs
 CREATE TRIGGER TRG_AUDITORIE_DISHES
 AFTER UPDATE ON dishes
 FOR EACH ROW
 BEGIN
-    DECLARE operation VARCHAR(10);
-    DECLARE table_name VARCHAR(50);
     DECLARE column_name VARCHAR(50);
     DECLARE old_value VARCHAR(255);
-    
-    SET operation = 'UPDATE';
-    SET table_name = 'dishes';
     
     IF (NEW.name_dish <> OLD.name_dish) THEN
         SET column_name = 'name_dish';
         SET old_value = OLD.name_dish;
-    ELSEIF (NEW.description_dish <> OLD.description_dish) THEN
-        SET column_name = 'description_dish';
-        SET old_value = OLD.description_dish;
     ELSEIF (NEW.category <> OLD.category) THEN
         SET column_name = 'category';
         SET old_value = OLD.category;
     ELSEIF (NEW.price <> OLD.price) THEN
         SET column_name = 'price';
         SET old_value = CAST(OLD.price AS CHAR);
-    ELSEIF (NEW.id_restaurant <> OLD.id_restaurant) THEN
-        SET column_name = 'id_restaurant';
-        SET old_value = CAST(OLD.id_restaurant AS CHAR);
     END IF;
     
     -- Registro en la tabla "auditorie"
     INSERT INTO auditorie (operation_type, table_name, column_name, old_value, user)
-    VALUES (operation, table_name, column_name, old_value, CURRENT_USER());
+    VALUES ('UPDATE', 'dishes', column_name, old_value, CURRENT_USER());
 END;
 
 UPDATE dishes
