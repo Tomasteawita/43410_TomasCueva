@@ -6,7 +6,7 @@ CREATE TABLE auditorie (
     id INT PRIMARY KEY AUTO_INCREMENT,
     operation_type ENUM('INSERT', 'UPDATE', 'DELETE'),
     table_name VARCHAR(50),
-    column_name VARCHAR(50),
+    column_name VARCHAR(100),
     old_value VARCHAR(255),
     user VARCHAR(100),
     timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
@@ -18,25 +18,39 @@ CREATE TRIGGER TRG_AUDITORIE_DISHES
 AFTER UPDATE ON dishes
 FOR EACH ROW
 BEGIN
-    DECLARE column_name VARCHAR(50);
-    DECLARE old_value VARCHAR(255);
-    
+    DECLARE column_name VARCHAR(100);
+    DECLARE old_price VARCHAR(10);
+    DECLARE old_name_dish VARCHAR(75);
+    DECLARE old_category VARCHAR(75);
+
+    SET column_name = '';
+
     IF (NEW.name_dish <> OLD.name_dish) THEN
-        SET column_name = 'name_dish';
-        SET old_value = OLD.name_dish;
-    ELSEIF (NEW.category <> OLD.category) THEN
-        SET column_name = 'category';
-        SET old_value = OLD.category;
-    ELSEIF (NEW.price <> OLD.price) THEN
-        SET column_name = 'price';
-        SET old_value = CAST(OLD.price AS CHAR);
+        SET column_name = CONCAT(column_name, ', name_dish');
+        SET old_name_dish = OLD.name_dish;
+    ELSE
+        SET old_name_dish = '';
     END IF;
-    
-    -- Registro en la tabla "auditorie"
+
+    IF (NEW.category <> OLD.category) THEN
+        SET column_name = CONCAT(column_name, ', category');
+        SET old_category = OLD.category;
+    ELSE
+        SET old_category = '';
+    END IF;
+
+    IF (NEW.price <> OLD.price) THEN
+        SET column_name = CONCAT(column_name, ', price');
+        SET old_price = CAST(OLD.price AS CHAR);
+    ELSE
+        SET old_price = '';
+    END IF;
+
     INSERT INTO auditorie (operation_type, table_name, column_name, old_value, user)
-    VALUES ('UPDATE', 'dishes', column_name, old_value, CURRENT_USER());
+    VALUES ('UPDATE', 'dishes', column_name, CONCAT(old_name_dish,' ',old_name_dish,' ',old_price), CURRENT_USER());
 END;
 
+-- Prueba de funcionamiento
 UPDATE dishes
 SET price = 10
 WHERE name_dish = "Classic Burger";
@@ -58,7 +72,7 @@ END;$$
 DELIMITER ;
 
 
-
+-- Prueba de funcionamiento
 ALTER TABLE sales
 MODIFY id_customer INT NULL;
 
