@@ -2,11 +2,14 @@ version: '3'
 services:
   mysql:
     image: mysql:latest
-    restart: always
     container_name: mysql-coder
     environment:
-      MYSQL_ROOT_PASSWORD: mysqlTomasteawita2002!
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_USER: ${MYSQL_USER_1},${MYSQL_USER_2},${MYSQL_USER_3},${MYSQL_USER_4},${MYSQL_USER_5}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD_1},${MYSQL_PASSWORD_2},${MYSQL_PASSWORD_3},${MYSQL_PASSWORD_4},${MYSQL_PASSWORD_5}
     ports:
       - 3306:3306
     volumes:
       - ./data:/var/lib/mysql
+    env_file:
+      - ./.env

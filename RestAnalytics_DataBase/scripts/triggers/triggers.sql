@@ -14,6 +14,7 @@ CREATE TABLE auditorie (
 
 DROP TRIGGER IF EXISTS TRG_AUDITORIE_DISHES;
 -- Este trigger esta inclompleto, debe tener todos los campos dentro de los ifs
+DELIMITER $$
 CREATE TRIGGER TRG_AUDITORIE_DISHES
 AFTER UPDATE ON dishes
 FOR EACH ROW
@@ -48,7 +49,8 @@ BEGIN
 
     INSERT INTO auditorie (operation_type, table_name, column_name, old_value, user)
     VALUES ('UPDATE', 'dishes', column_name, CONCAT(old_name_dish,' ',old_name_dish,' ',old_price), CURRENT_USER());
-END;
+END$$
+DELIMITER ;
 
 -- Prueba de funcionamiento
 UPDATE dishes
@@ -60,7 +62,6 @@ SELECT * FROM auditorie;
 -- -------------------------------------
 
 DROP TRIGGER IF EXISTS TRG_AUDITORIE_CUSTOMERS;
-
 DELIMITER $$
 CREATE TRIGGER TRG_AUDITORIE_CUSTOMERS
 BEFORE DELETE  ON customers
@@ -68,7 +69,7 @@ FOR EACH ROW
 BEGIN
     INSERT INTO auditorie(operation_type, table_name, old_value, user)
     VALUES("DELETE", "customers",CONCAT("id: ", OLD.id, "DNI: ", OLD.DNI, "last name: ", OLD.last_name), CURRENT_USER());
-END;$$
+END$$
 DELIMITER ;
 
 

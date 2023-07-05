@@ -1,4 +1,4 @@
-USE restanalytics;
+USE RestAnalytics;
 
 SELECT COUNT(*) FROM restaurants; --10
 SELECT COUNT(*) FROM dishes; -- 71
@@ -17,7 +17,7 @@ GROUP BY 1,2;
 
 -- Función para devolver el monto total recaudado utilizando una fecha especifica armada desde los parametros de la funcion
 DROP FUNCTION IF EXISTS FN_TOTAL_REVENUE;
-DELIMITER$$
+DELIMITER $$
 CREATE FUNCTION FN_TOTAL_REVENUE( restaurant INT, day_selected INT, month_selected INT, year_selected INT) 
 RETURNS DECIMAL(10,2)
 DETERMINISTIC
@@ -34,7 +34,7 @@ BEGIN
     
     RETURN total_revenue;
 END$$
-DELIMITER;
+DELIMITER ;
 
 -- Invoco la funcion
 SELECT restanalytics.FN_TOTAL_REVENUE(1, 13,6,2023) AS restaurante;
@@ -76,6 +76,6 @@ BEGIN
     
     RETURN top_dish;
 END$$
-DELIMITER;
+DELIMITER ;
 
 SELECT RestAnalytics.FN_TOP_DISH_SELLING(1) AS best_dish;

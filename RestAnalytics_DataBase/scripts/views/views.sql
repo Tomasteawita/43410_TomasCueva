@@ -1,4 +1,4 @@
-USE restanalytics;
+USE RestAnalytics;
 
 -- 1. Monto total por venta
 SELECT COUNT(*) FROM dishes_per_sale; -- 16999
@@ -12,6 +12,8 @@ LEFT JOIN sales s ON s.id = dps.id_sale
 LEFT JOIN dishes d ON dps.id_dish = d.id
 GROUP BY s.id);
 
+SELECT * FROM VW_TOTAL_SALES_MOUNT;
+
 -- 2. Cantidad de ordenes por cliente, mostrando el nombre, apellido y DNI del cliente
 
 SELECT COUNT(*) FROM sales; -- 10000
@@ -23,6 +25,8 @@ FROM sales s
 JOIN customers c ON s.id_customer = c.id 
 GROUP BY c.id
 ORDER BY order_count DESC);
+
+SELECT * FROM VW_ORDERS_PER_CUSTOMER;
 
 -- 3. Total facturado por restaurante
 
@@ -43,6 +47,8 @@ FROM (
 JOIN restaurants r ON r.id = subquery.id_restaurant
 GROUP BY r.name_restaurant
 ORDER BY total_collected_amount DESC);
+
+SELECT * FROM VW_TOTAL_COLLECTED_RESTAURANTS;
 
 -- 4. Diferencia entre consusmo local y delivery por restaurante
 CREATE OR REPLACE VIEW VW_ORDERS_BY_RESTAURANTS AS(
@@ -66,3 +72,5 @@ JOIN dishes d ON dps.id_dish = d.id
 JOIN customers c ON s.id_customer = c.id
 GROUP BY c.name_customer, c.last_name
 ORDER BY total_spent DESC);
+
+SELECT * FROM VW_TOTAL_SPENT_PER_CUSTOMER;

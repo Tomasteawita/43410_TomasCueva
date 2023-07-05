@@ -14,7 +14,7 @@ BEGIN
     EXECUTE stmt;
     DEALLOCATE PREPARE stmt;
 END $$
-DELIMITER;
+DELIMITER ;
 
 
 -- SP para insertar un nuevo restaurante
@@ -29,7 +29,7 @@ BEGIN
     INSERT INTO restaurants(name_restaurant, direction, CEO)
     VALUES (restaurant_name, localization, ceo);
 END$$
-DELIMITER;
+DELIMITER ;
 
 CALL SP_ADD_RESTAURANT("Carpinchos asaderia", "Calle 51 1890", "Carlos Altamiranda")
 SELECT * FROM restaurants;
@@ -45,6 +45,6 @@ BEGIN
     FROM dishes
     WHERE id_restaurant = restaurant_id;
 END$$
-DELIMITER;
+DELIMITER ;
 
 CALL SP_GET_RESTAURANT_DISHES(10);

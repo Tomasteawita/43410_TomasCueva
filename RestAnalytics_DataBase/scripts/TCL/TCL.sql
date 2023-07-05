@@ -92,3 +92,5 @@ ROLLBACK TO sp1;
 
 -- Hacer un commit de la transacción
 COMMIT;
+
+RELEASE;
