@@ -11,6 +11,10 @@ services:
     ports:
       - 3306:3306
     volumes:
-      - ./RestAnalytics_DataBase/data:/var/lib/mysql
+      - ./data:/var/lib/mysql
+      - ./RestAnalytics_DataBase/csv:/home/app/csv
+      - ./RestAnalytics_DataBase/scripts:/home/app/scripts
+      - ./RestAnalytics_DataBase/backup:/home/app/backup
+    working_dir: /home/app
     env_file:
-      - ./RestAnalytics_DataBase/.env
+      - ./.env
