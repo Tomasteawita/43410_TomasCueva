@@ -3,3 +3,5 @@ venv/
 requirements.txt
 data/
 MySQL/
+*.png
+informe.md

@@ -3,6 +3,7 @@ services:
   mysql:
     image: mysql:latest
     container_name: mysql-coder
+    command: --secure-file-priv=""
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_USER: ${MYSQL_USER_1},${MYSQL_USER_2},${MYSQL_USER_3},${MYSQL_USER_4},${MYSQL_USER_5}
@@ -10,6 +11,6 @@ services:
     ports:
       - 3306:3306
     volumes:
-      - ./data:/var/lib/mysql
+      - ./RestAnalytics_DataBase/data:/var/lib/mysql
     env_file:
-      - ./.env
+      - ./RestAnalytics_DataBase/.env
