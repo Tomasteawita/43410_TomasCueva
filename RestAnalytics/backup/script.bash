@@ -1,3 +1,5 @@
+cd backup
+
 # 1. Dump Data and Structure (Respaldar Datos y Estructura):
 mysqldump -u root -p RestAnalytics > backup_data_and_structure.sql
 
