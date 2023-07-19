@@ -1,3 +1,6 @@
+docker exec -it mysql-coder mysql -uroot -p --local-infile=1
+# ingresamos contraseña cuando se nos pida
+
 SET GLOBAL local_infile=1;
 
 LOAD DATA LOCAL INFILE '/home/app/csv/restaurants.csv'
