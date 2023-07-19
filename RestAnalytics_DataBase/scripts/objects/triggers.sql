@@ -1,5 +1,4 @@
 USE RestAnalytics;
-SELECT * FROM dishes;
 
 DROP TABLE IF EXISTS auditorie;
 CREATE TABLE auditorie (
@@ -13,7 +12,6 @@ CREATE TABLE auditorie (
 );
 
 DROP TRIGGER IF EXISTS TRG_AUDITORIE_DISHES;
--- Este trigger esta inclompleto, debe tener todos los campos dentro de los ifs
 DELIMITER $$
 CREATE TRIGGER TRG_AUDITORIE_DISHES
 AFTER UPDATE ON dishes
@@ -50,7 +48,7 @@ BEGIN
     INSERT INTO auditorie (operation_type, table_name, column_name, old_value, user)
     VALUES ('UPDATE', 'dishes', column_name, CONCAT(old_name_dish,' ',old_name_dish,' ',old_price), CURRENT_USER());
 END$$
-DELIMITER ;
+DELIMITER;
 
 -- Prueba de funcionamiento
 UPDATE dishes

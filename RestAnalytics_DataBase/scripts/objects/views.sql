@@ -1,9 +1,5 @@
 USE RestAnalytics;
 
--- 1. Monto total por venta
-SELECT COUNT(*) FROM dishes_per_sale; -- 16999
-SELECT COUNT(*) FROM sales; -- 10000
-SELECT COUNT(*) FROM dishes; -- 71
 
 CREATE OR REPLACE VIEW VW_TOTAL_SALES_MOUNT AS(
 SELECT s.id AS sale_id, SUM(d.price * dps.quantity) AS total_amount
@@ -14,10 +10,6 @@ GROUP BY s.id);
 
 SELECT * FROM VW_TOTAL_SALES_MOUNT;
 
--- 2. Cantidad de ordenes por cliente, mostrando el nombre, apellido y DNI del cliente
-
-SELECT COUNT(*) FROM sales; -- 10000
-SELECT COUNT(*) FROM customers; -- 20
 
 CREATE OR REPLACE VIEW VW_ORDERS_PER_CUSTOMER AS(
 SELECT c.name_customer, c.last_name, c.DNI, COUNT(s.id) AS order_count
@@ -27,13 +19,6 @@ GROUP BY c.id
 ORDER BY order_count DESC);
 
 SELECT * FROM VW_ORDERS_PER_CUSTOMER;
-
--- 3. Total facturado por restaurante
-
-SELECT COUNT(*) FROM dishes_per_sale; -- 16999
-SELECT COUNT(*) FROM sales; -- 10000
-SELECT COUNT(*) FROM dishes; -- 71
-SELECT COUNT(*) FROM restaurants; -- 10
 
 CREATE OR REPLACE VIEW VW_TOTAL_COLLECTED_RESTAURANTS AS(
 SELECT r.name_restaurant, COALESCE(SUM(subquery.total_amount), 0) AS total_collected_amount
@@ -50,7 +35,6 @@ ORDER BY total_collected_amount DESC);
 
 SELECT * FROM VW_TOTAL_COLLECTED_RESTAURANTS;
 
--- 4. Diferencia entre consusmo local y delivery por restaurante
 CREATE OR REPLACE VIEW VW_ORDERS_BY_RESTAURANTS AS(
 SELECT r.name_restaurant, 
        COUNT(CASE WHEN s.type_consumption = 'delivery' THEN 1 END) AS delivery_orders,
@@ -61,7 +45,6 @@ GROUP BY r.name_restaurant);
 
 SELECT * FROM VW_ORDERS_BY_RESTAURANTS;
 
--- 5. total gastado por cliente
 CREATE OR REPLACE VIEW VW_TOTAL_SPENT_PER_CUSTOMER AS(
 SELECT c.name_customer, 
        c.last_name, 

@@ -14,8 +14,9 @@ BEGIN
     EXECUTE stmt;
     DEALLOCATE PREPARE stmt;
 END $$
-DELIMITER ;
+DELIMITER;
 
+CALL SP_ORDER_TABLE ('restaurants', 'CEO','DESC')
 
 -- SP para insertar un nuevo restaurante
 DROP PROCEDURE IF EXISTS SP_ADD_RESTAURANT;
