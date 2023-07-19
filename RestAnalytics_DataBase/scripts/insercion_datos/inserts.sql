@@ -1,5 +1,12 @@
 USE RestAnalytics;
+
+SELECT @@autocommit;
+
+SET @autocommit = 0;
+
+START TRANSACTION;
 -- ----------------Restaurants------------------------
+SAVEPOINT sp0;
 INSERT INTO restaurants VALUES (1, 'McQueen`s Burgers', 'Calle Rivadavia 123',"Michael Richi");
 INSERT INTO restaurants VALUES (2, 'Suburban Café', 'Avenida San Martín 456',"Vanesa Gomez");
 INSERT INTO restaurants VALUES (3, 'Coffee Kingdom', 'Calle 7 789',"Sebastian Sciascia");
@@ -13,7 +20,11 @@ INSERT INTO restaurants VALUES (10, 'Chicken Palace', 'Avenida 19 234',"Jorge Wa
 
 SELECT * FROM restaurants;
 
+ROLLBACK TO sp0;
+
+COMMIT;
 -- ----------------Administratives------------------------
+SAVEPOINT sp1;
 INSERT INTO administratives VALUES ('1', '12345678', 'Rodrigo', 'López', 'rodrigo@example.com', 'KX8YtZ5Q7a', '9');
 INSERT INTO administratives VALUES ('2', '23456789', 'Valentina', 'Fernández', 'valentina@example.com', 'T2jF9P4D6s', '1');
 INSERT INTO administratives VALUES ('3', '34567890', 'Federico', 'Martínez', 'federico@example.com', 'M3rK7iG1V8', '7');
@@ -37,7 +48,11 @@ INSERT INTO administratives VALUES ('20', '1234567', 'Valentina', 'Díaz', 'vale
 
 SELECT * FROM administratives;
 
+ROLLBACK TO sp1;
+
+COMMIT;
 -- ----------------Customers------------------------
+SAVEPOINT sp2;
 INSERT INTO customers VALUES ('1', '123456789', 'John', 'Doe', 'johndoe@example.com');
 INSERT INTO customers VALUES ('2', '987654321', 'Jane', 'Smith', 'janesmith@example.com');
 INSERT INTO customers VALUES ('3', '456789123', 'Michael', 'Johnson', 'michaeljohnson@example.com');
@@ -61,7 +76,11 @@ INSERT INTO customers VALUES ('20', '654789123', 'Alexis', 'Scott', 'alexisscott
 
 SELECT * FROM customers;
 
+ROLLBACK TO sp2;
+
+COMMIT;
 -- ----------------Dishes------------------------
+SAVEPOINT sp3;
 INSERT INTO dishes VALUES ('1', 'Classic Burger', 'Deliciosa hamburguesa clásica con carne jugosa, pan suave, lechuga, tomate y queso.', 'Hamburguesa', '9.99', '1');
 INSERT INTO dishes VALUES ('2', 'Cheeseburger Supreme', 'Hamburguesa con doble carne, queso fundido, tocino crujiente y salsa especial.', 'Hamburguesa', '12.99', '1');
 INSERT INTO dishes VALUES ('3', 'Spicy Chicken Sandwich', 'Sándwich de pollo picante con lechuga, tomate y mayonesa de chipotle.', 'Sándwich', '10.99', '1');
@@ -136,7 +155,12 @@ INSERT INTO dishes VALUES ('71', 'Lime Pie', 'Tarta de lima con una base de gall
 
 SELECT * FROM dishes;
 
+ROLLBACK TO sp3;
+
+COMMIT;
+
 -- ----------------Sales------------------------
+SAVEPOINT sp4;
 INSERT INTO sales VALUES ('1', '2023-06-13 15:01:56.204509', 'delivery', '7', '3');
 INSERT INTO sales VALUES ('2', '2023-06-13 15:00:56.204509', 'restaurant', '2', '19');
 INSERT INTO sales VALUES ('3', '2023-06-13 14:59:56.204509', 'restaurant', '5', '17');
@@ -190,7 +214,11 @@ INSERT INTO sales VALUES ('50', '2023-06-13 14:12:56.204509', 'restaurant', '3',
 
 SELECT * FROM sales;
 
+ROLLBACK TO sp4;
+
+COMMIT;
 -- ----------------Dishes_per_sale------------------------
+SAVEPOINT sp5;
 INSERT INTO dishes_per_sale VALUES ('1', '3', '1', '2');
 INSERT INTO dishes_per_sale VALUES ('2', '17', '1', '1');
 INSERT INTO dishes_per_sale VALUES ('3', '46', '2', '1');
@@ -292,3 +320,7 @@ INSERT INTO dishes_per_sale VALUES ('98', '13', '49', '1');
 INSERT INTO dishes_per_sale VALUES ('99', '38', '50', '3');
 
 SELECT * FROM dishes_per_sale;
+
+ROLLBACK TO sp5;
+
+COMMIT;
