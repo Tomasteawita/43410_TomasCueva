@@ -28,7 +28,7 @@ CREATE TABLE `administratives` (
   `name_administrative` varchar(75) DEFAULT NULL,
   `last_name` varchar(75) NOT NULL,
   `email` varchar(120) NOT NULL,
-  `password_administratives` varchar(120) NOT NULL,
+  `password` varchar(120) NOT NULL,
   `id_restaurant` int NOT NULL,
   PRIMARY KEY (`id`),
   KEY `id_restaurant` (`id_restaurant`),

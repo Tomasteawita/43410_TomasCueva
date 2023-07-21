@@ -1,4 +1,4 @@
-id;DNI;name_administrative;last_name;email;password_administratives;id_restaurant
+id;DNI;name_administrative;last_name;email;password;id_restaurant
 1;12345678;Rodrigo;López;rodrigo@example.com;KX8YtZ5Q7a;9
 2;23456789;Valentina;Fernández;valentina@example.com;T2jF9P4D6s;1
 3;34567890;Federico;Martínez;federico@example.com;M3rK7iG1V8;7

@@ -55,7 +55,7 @@ CREATE TABLE administratives(
     name_administrative VARCHAR(75),
     last_name VARCHAR(75) NOT NULL,
     email VARCHAR(120) NOT NULL,
-    password_administratives VARCHAR(120) NOT NULL,
+    password VARCHAR(120) NOT NULL,
     id_restaurant INT NOT NULL,
     FOREIGN KEY (id_restaurant) REFERENCES restaurants(id)
     ON DELETE RESTRICT,

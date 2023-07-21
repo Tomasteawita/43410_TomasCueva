@@ -68,7 +68,7 @@ BEGIN
     INSERT INTO auditorie(operation_type, table_name, old_value, user)
     VALUES("DELETE", "customers",CONCAT("id: ", OLD.id, "DNI: ", OLD.DNI, "last name: ", OLD.last_name), CURRENT_USER());
 END$$
-DELIMITER ;
+DELIMITER;
 
 
 -- Prueba de funcionamiento
